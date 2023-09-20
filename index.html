@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fitness App</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <form class="form_main" action="#">
+                <label for="mola">Antrenman Arası Mola (Dk)</label>
+                <input type="text" name="mola" id="mola">
+                <label for="tekrar">Antrenman Tekrarı</label>
+                <input type="text" name="tekrar" id="tekrar">
+                <label for="setsayi">Antrenman Set Sayısı</label>
+                <input type="text" name="setsayi" id="setsayi">
+                <div class="turler">
+                    <div>
+                        <label for="antrenman_tur">Antrenman Türü</label>
+                        <select name="antrenman_tur" id="antrenman-tur">
+                            <option value=""></option>
+                            <option value="bacak">Bacak</option>
+                            <option value="sirt">Sırt</option>
+                            <option value="omuz">Omuz</option>
+                            <option value="gogus">Göğüs</option>
+                            <option value="kol">Kol</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="hareket_tur">Hareket Türü</label>
+                        <select name="hareket_tur" id="hareket-tur">
+                            <option value="bos"></option>
+                            <option class="disable" id="benchpress" value="benchpress">Bench Press</option>
+                            <option class="disable" id="squat" value="squat">Squat</option>
+                            <option class="disable" id="deadlift" value="deadlift">Deadlift</option>
+                            <option class="disable" id="barbellcurl" value="barbellcurl">Barbell Curl</option>
+                            <option class="disable" id="barbellrow" value="barbellrow">Barbell Rowing</option>
+                            <option class="disable" id="neckpress" value="neckpress">Neck Press</option>
+                        </select>
+                    </div>
+                    <div>
+                        <labelz for="gun">Gün</labelz>
+                        <select name="gun" id="gunsec">
+                            <option value=""></option>
+                            <option value="pazartesi">Pazartesi</option>
+                            <option value="salı">Salı</option>
+                            <option value="carsamba">Çarşamba</option>
+                            <option value="persembe">Perşembe</option>
+                            <option value="cuma">Cuma</option>
+                            <option value="cumartesi">Cumartesi</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" id="gonder" class="submitbtn">Gönder</a>
+
+
+            </form>
+
+            <div class="sonuc">
+                <h2 class="disable gunismi" id="gunismi"></h2>
+                <div class="antrenmanlar">
+
+
+                </div>
+                <div class="resimbox disable">
+                    <img class="hareketresmi " src="" alt="">
+                </div>
+            </div>
+        </div>
+        <section id="days" class="antrenmangunlugu">
+
+
+        </section>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

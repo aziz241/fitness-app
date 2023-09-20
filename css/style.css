@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #bccce0;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.form {
+  width: 40%;
+  background-color: #bf98a0;
+  height: 100vh;
+}
+.form_main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: start;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form_main input {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #252525;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+.form_main input:hover,
+input:focus-visible {
+  background-color: #a6d9f7;
+
+  outline: 0;
+}
+.turler {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.turler label,
+.turler input {
+  margin: 5px;
+  width: auto;
+  display: inline-block;
+}
+.submitbtn {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #3308086c;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+  
+}
+.submitbtn:hover {
+  background-color: #fff;
+  color: #252525;
+
+}
+.recoverybtn {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #700101;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+}
+.recoverybtn:hover {
+  background-color: #ffffff;
+  color: #252525;
+  border: 1px solid #252525;
+}
+.antrenmangunlugu {
+  width: 59%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.day {
+  border-radius: 5px;
+  margin: 0.5rem;
+  width: 20%;
+  height: 20%;
+  background-color: #312f2f;
+  position: relative;
+  color: #fff;
+}
+.day:hover {
+  opacity: 0.9;
+}
+.day__baslik {
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+.sonuc {
+  text-align: center;
+  overflow: hidden;
+  background-color: #312f2f;
+  position: relative;
+}
+.antrenman {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.antrenmanici {
+  padding: 0 1rem;
+  font-weight: 700;
+}
+.antrenmanici p {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.disable {
+  display: none;
+}
+.gunismi {
+  text-transform: uppercase;
+  color: #fff;
+}
+#day--baslik {
+  font-size: 1.4rem;
+}
+.disabled {
+  visibility: hidden;
+}
+.hareketresmi {
+  height: auto;
+  width: 100%;
+  display: block;
+}
